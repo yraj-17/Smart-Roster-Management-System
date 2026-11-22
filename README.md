@@ -10,7 +10,12 @@
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18-4169E1?logo=postgresql&logoColor=white)](backend/alembic/versions)
 [![Tests](https://img.shields.io/badge/tests-80%20backend%20%2B%203%20E2E-brightgreen)](#-running-tests)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Live demo](https://img.shields.io/badge/demo-live-success?logo=vercel)](https://smart-roster-management-system-lyart.vercel.app/)
 <!-- TODO: add a CI build-status badge once a workflow exists (no .github/workflows yet) -->
+
+**Live demo:** [smart-roster-management-system-lyart.vercel.app](https://smart-roster-management-system-lyart.vercel.app/) · **API docs:** [smart-roster-api.onrender.com/docs](https://smart-roster-api.onrender.com/docs)
+
+> The API runs on Render's free tier and sleeps after 15 idle minutes. The first request after that can take about a minute while it wakes up. Open the [health check](https://smart-roster-api.onrender.com/api/health) first if the app seems slow to load.
 
 ![Monthly roster grid](docs/screenshots/02-roster-employee-view.png)
 
@@ -235,7 +240,15 @@ On Windows PowerShell, set the build variable first with `$env:VITE_API_URL="htt
 
 Deployment to **Render (API) + Neon (PostgreSQL) + Vercel (frontend)** is configured in [`render.yaml`](render.yaml) and [`frontend/vercel.json`](frontend/vercel.json). [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) covers the provider comparison, free-tier limits and step-by-step setup.
 
-<!-- TODO: add live demo URLs once the deployment is published -->
+**Live deployment**
+
+| Component | URL |
+|---|---|
+| Web app (Vercel) | https://smart-roster-management-system-lyart.vercel.app/ |
+| API (Render) | https://smart-roster-api.onrender.com |
+| Interactive API docs | https://smart-roster-api.onrender.com/docs |
+| Health check | https://smart-roster-api.onrender.com/api/health |
+| Database | Neon PostgreSQL (Singapore), direct connection; credentials are held only in Render's environment |
 
 ### Docker
 
@@ -459,8 +472,8 @@ Released under the [MIT License](LICENSE).
 
 ## Contact / Author
 
-<!-- TODO: author name -->
-<!-- TODO: LinkedIn profile URL -->
-<!-- TODO: contact email (optional) -->
+- **Name:** Raj Yadav
+- **LinkedIn:** [linkedin.com/in/raj-yadav-706b60397](https://www.linkedin.com/in/raj-yadav-706b60397)
+- **Email:** ryadav.tech17@gmail.com
 
 Built as a submission for the DataStraw Tech Internship Assessment.
