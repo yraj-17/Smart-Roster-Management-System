@@ -1,0 +1,35 @@
+{
+  "_note": "Seed data only - fully editable through the API/UI after seeding. Movable festival dates are approximate.",
+  "calendars": [
+    {
+      "name": "India - National",
+      "region": "IN",
+      "is_default": true,
+      "holidays": [
+        {"date": "2026-01-26", "name": "Republic Day", "kind": "NATIONAL"},
+        {"date": "2026-03-04", "name": "Holi", "kind": "NATIONAL"},
+        {"date": "2026-03-21", "name": "Eid ul-Fitr", "kind": "NATIONAL"},
+        {"date": "2026-04-03", "name": "Good Friday", "kind": "NATIONAL"},
+        {"date": "2026-08-15", "name": "Independence Day", "kind": "NATIONAL"},
+        {"date": "2026-10-02", "name": "Gandhi Jayanti", "kind": "NATIONAL"},
+        {"date": "2026-10-20", "name": "Dussehra", "kind": "NATIONAL"},
+        {"date": "2026-11-08", "name": "Diwali", "kind": "NATIONAL"},
+        {"date": "2026-11-24", "name": "Guru Nanak Jayanti", "kind": "NATIONAL"},
+        {"date": "2026-12-25", "name": "Christmas", "kind": "NATIONAL"},
+        {"date": "2027-01-01", "name": "New Year's Day", "kind": "OPTIONAL"},
+        {"date": "2027-01-26", "name": "Republic Day", "kind": "NATIONAL"}
+      ]
+    },
+    {
+      "name": "India - Karnataka",
+      "region": "IN-KA",
+      "is_default": false,
+      "inherits": "India - National",
+      "holidays": [
+        {"date": "2026-11-01", "name": "Kannada Rajyotsava", "kind": "REGIONAL"},
+        {"date": "2026-12-03", "name": "Regional Founders Day (fictional)", "kind": "REGIONAL"},
+        {"date": "2027-01-15", "name": "Makar Sankranti", "kind": "REGIONAL"}
+      ]
+    }
+  ]
+}
